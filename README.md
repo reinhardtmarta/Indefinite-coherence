@@ -21,6 +21,25 @@ The protocol is fully NISQ-compatible, requires **no dynamical decoupling** and 
 - Single extra layer of CNOTs + one Hadamard
 - Deployable today on any current IBM Quantum device
 
+# Indefinite Quantum Coherence up to 127 Qubits  
+### via Single Commuting-Subspace Projection
+
+![127-qubit result](figures/127qubit_mps.png)
+
+## Paper (open access)
+→ https://zenodo.org/records/17665050
+
+## Key results
+- 12 qubits → density-matrix simulation with real ibm_kyoto noise (20 Nov 2025)  
+  Off-diagonal population = 0.4991 ± 0.0031 up to 1.2 ms
+- 127 qubits → matrix-product-state simulation (full ibm_kyoto size)  
+  Off-diagonal population = 0.5000 (exact) up to 1.2 ms
+
+No dynamical decoupling · No error correction · Single extra layer of standard gates
+
+## Reproduce everything
+```bash
+pip install -r requirements.txt
 ## Code
 `mqim_simulation.ipynb` → notebook completo que reproduz todas as figuras do paper (roda em <3 min no Colab gratuito).
 
