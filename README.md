@@ -58,3 +58,5 @@ pip install -r requirements.txt
   doi={10.5281/zenodo.17665050},
   url={https://doi.org/10.5281/zenodo.17665050}
 }
+
+## LICENSE Creative Commons 
