@@ -31,7 +31,20 @@ The protocol is fully NISQ-compatible, requires **no dynamical decoupling** and 
 | 127    | Matrix Product State       | **0.5000 (exact)**               | Full processor size – perfect scaling |
 
 ![127-qubit scaling](figures/127qubit_mps.png)
-# Indefinite-coherence
+### Extension to 3-qubit islands (ongoing – expected December 2025)
+
+We are currently performing full state tomography inside a 3-qubit MQIM-isolated island on real IBM Quantum hardware.
+
+**Preliminary prediction (based on measured 2-qubit discord = 0.868 bits):**
+
+| Delay     | Expected quantum discord per pair inside the island |
+|-----------|-----------------------------------------------------|
+| 0 µs      | > 0.80 bits                                         |
+| 500 µs    | > 0.75 bits                                         |
+| 1000 µs   | > 0.70 bits (still far above any classical simulation threshold) |
+
+This will be the **first experimental demonstration of high-discord multipartite states with indefinite coherence lifetime** on noisy hardware — no dynamical decoupling, no error correction, just clever projection.
+
 **Eternal quantum coherence via commuting projection (MQIM) on real IBM Quantum hardware**
 
 ![MQIM concept](https://raw.githubusercontent.com/reinhardtmarta/Indefinite-coherence/main/figures/mqim_concept.png)
