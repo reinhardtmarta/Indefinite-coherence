@@ -31,6 +31,28 @@ The protocol is fully NISQ-compatible, requires **no dynamical decoupling** and 
 | 127    | Matrix Product State       | **0.5000 (exact)**               | Full processor size – perfect scaling |
 
 ![127-qubit scaling](figures/127qubit_mps.png)
+# Indefinite-coherence
+**Eternal quantum coherence via commuting projection (MQIM) on real IBM Quantum hardware**
+
+![MQIM concept](https://raw.githubusercontent.com/reinhardtmarta/Indefinite-coherence/main/figures/mqim_concept.png)
+*DFS-based modular isolation creates “coherence islands” of 3 qubits each inside noisy 127-qubit processors.*
+
+### New — Experimental validation (November 2025)
+We have experimentally generated the **highest quantum discord ever reported on open-access IBM Quantum hardware**:
+
+- **Quantum discord = 0.868 bits** (real hardware, QInfinite open plan)  
+- **Bell state fidelity = 94.3 %**  
+- **Concurrence = 0.887**  
+- **Raw Bell population = 96.4 %** (counts: 00:530, 11:458)
+
+These high-discord Bell states are the **ideal building blocks** for the MQIM protocol presented here.
+
+ Full paper (2 pages):  
+ M. Reinhardt, *High-Fidelity Bell State Generation and Quantum Discord Characterization on IBM Quantum NISQ Hardware*  
+ DOI: [10.5281/zenodo.17672566](https://doi.org/10.5281/zenodo.17672566)
+
+### Key results with MQIM (already achieved in simulation + ongoing on real hardware)
+| Qubits in island | Off-diagonal population | Coherence time
 
 ## Reproduce Everything in < 5 minutes
 ```bash
@@ -45,13 +67,13 @@ Citation
 @article{reinhardt2025indefinite,
 ## Experimental Validation
 This protocol is powered by high-fidelity Bell states with quantum discord = 0.868 bits on IBM Quantum hardware. Full results: [DOI 10.5281/zenodo.17672566](https://zenodo.org/records/17672566).
+
   title   = {Scalable Indefinite Quantum Coherence via Single Commuting-Subspace Projection},
   author  = {Reinhardt, Marta},
   year    = {2025},
   month   = {nov},
   doi     = {10.5281/zenodo.17665050},
   url     = {https://doi.org/10.5281/zenodo.17665050}
-}
 Licenses
 Paper & figures: CC BY 4.0 – free to share and adapt with attribution
 Code & notebooks: MIT License
