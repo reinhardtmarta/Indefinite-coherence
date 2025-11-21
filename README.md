@@ -43,6 +43,8 @@ jupyter notebook mqim_simulation.ipynb
 → Generates both figures from the paper
 Citation
 @article{reinhardt2025indefinite,
+## Experimental Validation
+This protocol is powered by high-fidelity Bell states with quantum discord = 0.868 bits on IBM Quantum hardware. Full results: [DOI 10.5281/zenodo.17672566](https://zenodo.org/records/17672566).
   title   = {Scalable Indefinite Quantum Coherence via Single Commuting-Subspace Projection},
   author  = {Reinhardt, Marta},
   year    = {2025},
