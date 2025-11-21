@@ -47,8 +47,6 @@ This will be the **first experimental demonstration of high-discord multipartite
 
 **Eternal quantum coherence via commuting projection (MQIM) on real IBM Quantum hardware**
 
-![MQIM concept](https://raw.githubusercontent.com/reinhardtmarta/Indefinite-coherence/main/figures/mqim_concept.png)
-*DFS-based modular isolation creates “coherence islands” of 3 qubits each inside noisy 127-qubit processors.*
 
 ### New — Experimental validation (November 2025)
 We have experimentally generated the **highest quantum discord ever reported on open-access IBM Quantum hardware**:
