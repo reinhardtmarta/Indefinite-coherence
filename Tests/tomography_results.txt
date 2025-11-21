@@ -1,0 +1,67 @@
+1. Tomography on Ideal Simulator
+
+Reconstructed density matrix (ideal):
+
+DensityMatrix([
+ [5.04907423e-01+0.00000000e+00j,  1.46991538e-03+1.58311208e-03j,
+  3.96173723e-04-1.14773960e-03j,  4.96084109e-01-1.01915589e-02j],
+ [1.46991538e-03-1.58311208e-03j,  2.46581639e-03+1.08420217e-19j,
+  1.02893795e-04+3.44754316e-03j,  1.96424276e-03-1.82519593e-03j],
+ [3.96173723e-04+1.14773960e-03j,  1.02893795e-04-3.44754316e-03j,
+  4.85857594e-03+0.00000000e+00j,  9.87132201e-05+3.33730117e-04j],
+ [4.96084109e-01+1.01915589e-02j,  1.96424276e-03+1.82519593e-03j,
+  9.87132201e-05-3.33730117e-04j,  4.87768185e-01+1.73472348e-18j]
+])
+
+Fidelity with ideal Bell state:
+
+0.9924219127229764
+
+This confirms an almost perfect reconstruction: the prepared state matches the target Bell state with >99% fidelity, consistent with an ideal simulator.
+
+
+---
+
+2. Tomography Using Realistic Noise (IBM QInfinite)
+
+Reconstructed density matrix (realistic noise):
+
+DensityMatrix([
+ [4.85433333e-01+0.j    , -6.66666667e-05-0.0001j,
+  -3.00000000e-03-0.0051j,  4.60300000e-01+0.0092j],
+ [-6.66666667e-05+0.0001j,  1.50333333e-02+0.j    ,
+   1.30000000e-03-0.009j ,  2.20000000e-03+0.0043j],
+ [-3.00000000e-03+0.0051j,  1.30000000e-03+0.009j ,
+   2.01666667e-02+0.j    ,  6.13333333e-03-0.0009j],
+ [4.60300000e-01-0.0092j,  2.20000000e-03-0.0043j,
+   6.13333333e-03+0.0009j,  4.79366667e-01+0.j    ]
+])
+
+Fidelity with ideal Bell state:
+
+0.942700002551997
+
+This result is excellent for a free-tier IBM backend, indicating:
+
+coherence is largely preserved,
+
+noise reduces fidelity by ~5%,
+
+the entangled Bell state is still strongly recognizable in the reconstructed density matrix.
+
+
+
+---
+
+3. Interpretation
+
+The off-diagonal terms remain large, showing strong quantum coherence.
+
+The populations of  and  dominate, as expected for .
+
+Noise mainly affects small imaginary components and introduces slight asymmetry.
+
+Fidelities of 0.94–0.99 indicate high physical consistency.
+
+
+This confirms that the method used to prepare entanglement behaves reliably across ideal simulation, noisy environments, and limited real-hardware analogs.
